@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sem6.insertar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtcodigo" Placeholder="Ingrese un codigo" />
+            <Entry x:Name="txtnombre" Placeholder="ingrese su nombre"/>
+            <Entry x:Name="txtapellido" Placeholder="ingrese su apellido"/>
+            <Entry x:Name="txtedad" Placeholder="ingrese su edad"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="insertar" x:Name="btnIngresar" Clicked="BtnIngresar_Clicked" ></Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="regresar" x:Name="btnRegresar" Clicked="BtnRegresar_Clicked"></Button>
+            </Grid>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
